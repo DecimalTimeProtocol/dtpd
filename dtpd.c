@@ -64,7 +64,6 @@ int main() {
         printf("decimalYears:\t%f\n\n", decimalYears);
 
         printf("decimalEpoch:\t%lu\n\n", convertToDecimalSeconds(time(NULL)));
-        printf("45 Seconds is:\t%lu\n\n", convertToDecimalSeconds(45));
 
         fflush(stdout);
         if (nanosleep(&req, &rem) < 0) {

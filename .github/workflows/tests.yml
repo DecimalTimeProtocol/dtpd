@@ -1,0 +1,19 @@
+name: Tests
+
+on:
+  push:
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          clang -fcolor-diagnostics -fansi-escape-codes -g tests.c utils.c -o tests
+
+      - name: Run Tests
+        run: ./tests
