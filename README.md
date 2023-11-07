@@ -2,4 +2,5 @@
 
 # dtpd
 
-Decimal Time Protocol Daemon
+Decimal Time Protocol Daemon (experimental)
+
